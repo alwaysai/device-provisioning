@@ -112,7 +112,8 @@ def createkeysandcertificate_execution_accepted(response):
     try:
         global createKeysAndCertificateResponse
         createKeysAndCertificateResponse = response
-        print("Received a new message {}".format(createKeysAndCertificateResponse))
+        # print("Received a new message {}".format(createKeysAndCertificateResponse))
+        print("Receiving keys.")
 
         # Added by JR
         with open("./keys/certificate.pem", "w") as outfile:
