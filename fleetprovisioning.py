@@ -115,9 +115,9 @@ def createkeysandcertificate_execution_accepted(response):
         print("Received a new message {}".format(createKeysAndCertificateResponse))
 
         # Added by JR
-        with open("./certificate.pem", "w") as outfile:
+        with open("./keys/certificate.pem", "w") as outfile:
             outfile.write(str(createKeysAndCertificateResponse.certificate_pem))
-        with open("./private.key", "w") as outfile:
+        with open("./keys/private.key", "w") as outfile:
             outfile.write(str(createKeysAndCertificateResponse.private_key))
 
         return
