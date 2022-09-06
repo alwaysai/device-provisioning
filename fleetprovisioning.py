@@ -116,9 +116,9 @@ def createkeysandcertificate_execution_accepted(response):
         print("Receiving keys.")
 
         # Added by JR
-        with open("./keys/certificate.pem", "w") as outfile:
+        with open("./.config/alwaysai/certificates/certificate.pem", "w") as outfile:
             outfile.write(str(createKeysAndCertificateResponse.certificate_pem))
-        with open("./keys/private.key", "w") as outfile:
+        with open("./.config/alwaysai/certificates/private.key", "w") as outfile:
             outfile.write(str(createKeysAndCertificateResponse.private_key))
 
         return
